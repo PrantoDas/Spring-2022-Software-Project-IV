@@ -17,20 +17,17 @@ namespace DemoAPI.Controllers
         {
             _context = context;
         }
-        private async void loadStudentData()
+        private async void LoadStudentData()
         {
-            List<Student> studentData = await _context.Students.ToListAsync();
-            if (studentData.Count() == 0)
-            {
-                var webClient = new WebClient();
-                var json = webClient.DownloadString(@"C:/Users/nadimnesar/Documents/Spring-2022-Software-Project-IV/DemoAPI/JsonFiles/StudentInfo.json");
-                var studentList = JsonConvert.DeserializeObject<List<Student>>(json);
+            StreamReader streamReader = new StreamReader("JsonFiles/StudentInfo.json");
+            var jsonData = streamReader.ReadToEnd();
+            var studentList = JsonConvert.DeserializeObject<List<Student>>(jsonData);
 
-                foreach (var istudent in studentList)
-                {
-                    _context.Students.Add(istudent);
-                }
+            foreach (var istudent in studentList)
+            {
+                _context.Students.Add(istudent);
             }
+
             await _context.SaveChangesAsync();
         }
 
@@ -38,8 +35,13 @@ namespace DemoAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
-            loadStudentData();
-            return await _context.Students.ToListAsync();
+            List<Student> studentData = await _context.Students.ToListAsync();
+            if (studentData.Count() == 0)
+            {
+                LoadStudentData();
+                studentData = await _context.Students.ToListAsync();
+            }
+            return studentData;
         }
 
         // GET: api/Students/5
