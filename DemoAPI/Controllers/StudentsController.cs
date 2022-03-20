@@ -2,6 +2,8 @@
 using DemoAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using System.Net;
 
 namespace DemoAPI.Controllers
 {
@@ -15,11 +17,28 @@ namespace DemoAPI.Controllers
         {
             _context = context;
         }
+        private async void loadStudentData()
+        {
+            List<Student> studentData = await _context.Students.ToListAsync();
+            if (studentData.Count() == 0)
+            {
+                var webClient = new WebClient();
+                var json = webClient.DownloadString(@"C:/Users/nadimnesar/Documents/Spring-2022-Software-Project-IV/DemoAPI/JsonFiles/StudentInfo.json");
+                var studentList = JsonConvert.DeserializeObject<List<Student>>(json);
+
+                foreach (var istudent in studentList)
+                {
+                    _context.Students.Add(istudent);
+                }
+            }
+            await _context.SaveChangesAsync();
+        }
 
         // GET: api/Students
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
+            loadStudentData();
             return await _context.Students.ToListAsync();
         }
 
