@@ -130,6 +130,16 @@ namespace DemoAPI.Controllers
             return NoContent();
         }
 
+        // GET: api/Students/5
+        [HttpGet("cgpa/{cgpa}")]
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudents(double cgpa)
+        {
+            List<Student> allstudent = await _context.Students.ToListAsync();
+            List<Student> selectedStudent = allstudent.FindAll(x => x.CGPA >= cgpa);
+
+            return selectedStudent;
+        }
+
         private bool StudentExists(string id)
         {
             return _context.Students.Any(e => e.Id == id);

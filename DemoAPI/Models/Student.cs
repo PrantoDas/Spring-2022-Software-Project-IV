@@ -7,5 +7,6 @@
         public int Age { get; set; } = 0;
         public string Email { get; set; }
         public string Section { get; set; }
+        public double CGPA { get; set; }
     }
 }
