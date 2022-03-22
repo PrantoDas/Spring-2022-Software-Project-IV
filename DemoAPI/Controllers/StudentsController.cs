@@ -137,12 +137,6 @@ namespace DemoAPI.Controllers
             studentName = studentName.ToLower().Trim();
             var allStudent = await _context.Students.ToListAsync();
             var selectedStudent = allStudent.FindAll(s => s.Name.ToLower().Contains(studentName));
-        
-            if (selectedStudent.Count() == 0)
-            {
-                return NotFound();
-            }
-
             return selectedStudent;
         }
 
@@ -152,7 +146,15 @@ namespace DemoAPI.Controllers
         {
             List<Student> allstudent = await _context.Students.ToListAsync();
             List<Student> selectedStudent = allstudent.FindAll(x => x.CGPA >= cgpa);
+            return selectedStudent;
+        }
 
+        // GET: api/Get Students An Specific Age Range
+        [HttpGet("GetStudentsByAnSpecificAgeRange")]
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudentsByAnSpecificAgeRange(int startAge,int endAge)
+        {
+            var allStudent = await _context.Students.ToListAsync();
+            var selectedStudent = allStudent.FindAll(s => s.Age >= startAge && s.Age <= endAge);
             return selectedStudent;
         }
 
