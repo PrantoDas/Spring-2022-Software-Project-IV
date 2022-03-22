@@ -160,5 +160,21 @@ namespace DemoAPI.Controllers
         {
             return _context.Students.Any(e => e.Id == id);
         }
+
+        // GET: api/Students in specific section
+        [HttpGet("GetStudentsBySection")]
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudentsBySection(string section)
+        {
+            section = section.ToLower().Trim();
+            var totalSection = await _context.Students.ToListAsync();
+            var sameSection = totalSection.FindAll(s => s.Section.ToLower() == section);
+
+            if (sameSection.Count() == 0)
+            {
+                return NotFound();
+            }
+
+            return sameSection;
+        }
     }
 }
