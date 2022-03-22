@@ -130,6 +130,22 @@ namespace DemoAPI.Controllers
             return NoContent();
         }
 
+        // GET: api/Search Students by name
+        [HttpGet("GetStudentsByName")]
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudentsByName(string studentName)
+        {
+            studentName = studentName.ToLower().Trim();
+            var allStudent = await _context.Students.ToListAsync();
+            var selectedStudent = allStudent.FindAll(s => s.Name.ToLower().Contains(studentName));
+        
+            if (selectedStudent.Count() == 0)
+            {
+                return NotFound();
+            }
+
+            return selectedStudent;
+        }
+
         // GET: api/Students/5
         [HttpGet("cgpa/{cgpa}")]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents(double cgpa)
