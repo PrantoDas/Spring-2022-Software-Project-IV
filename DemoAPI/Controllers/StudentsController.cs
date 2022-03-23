@@ -23,9 +23,9 @@ namespace DemoAPI.Controllers
             var jsonData = streamReader.ReadToEnd();
             var studentList = JsonConvert.DeserializeObject<List<Student>>(jsonData);
 
-            foreach (var istudent in studentList)
+            foreach (var student in studentList)
             {
-                _context.Students.Add(istudent);
+                _context.Students.Add(student);
             }
 
             await _context.SaveChangesAsync();
