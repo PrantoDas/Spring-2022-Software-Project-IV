@@ -117,6 +117,16 @@ namespace DemoAPI.Controllers
             return CreatedAtAction("GetBooks", new { id = Books.Id }, Books);
         }
 
+        // GET: api/Search Books by Category
+        [HttpGet("GetBooksByCategory")]
+        public async Task<ActionResult<IEnumerable<Book>>> GetBooksByCategory(string category)
+        {
+            category = category.ToLower().Trim();
+            List<Book> allBook = await _context.Books.ToListAsync();
+            List<Book> selectedBook = allBook.FindAll(s => s.Category.ToLower().Equals(category));
+            return selectedBook;
+        }
+
         // DELETE: api/Books/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBooks(int id)
