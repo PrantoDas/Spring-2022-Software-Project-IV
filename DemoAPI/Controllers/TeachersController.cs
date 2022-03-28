@@ -128,6 +128,15 @@ namespace DemoAPI.Controllers
             return NoContent();
         }
 
+        // GET: api/Get Teacher An Specific Age 
+        [HttpGet("FindByOlderAge")]
+        public async Task<ActionResult<IEnumerable<Teacher>>> FindByOlderAge(int age)
+        {
+            var allTeacher = await _context.Teachers.ToListAsync();
+            var selectedTeacher = allTeacher.FindAll(s => s.Age > age);
+            return selectedTeacher;
+        }
+
         private bool TeacherExists(string id)
         {
             return _context.Teachers.Any(e => e.Id == id);
