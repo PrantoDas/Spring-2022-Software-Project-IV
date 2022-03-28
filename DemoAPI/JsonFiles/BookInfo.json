@@ -1,0 +1,95 @@
+[
+  {
+    "id": "01",
+    "category": "Si-Fi",
+    "title": "The New World",
+    "author": "Rehan Rahmah",
+    "pages": 169
+  },
+
+  {
+    "id": "02",
+    "category": "Fantasy",
+    "title": "Harry Potter",
+    "author": "J. K. Rowling",
+    "pages": 870
+  },
+
+  {
+    "id": "03",
+    "category": "Fantasy",
+    "title": "The Lord of the Rings",
+    "author": "J. R. R. Tolkien",
+    "pages": 770
+  },
+
+  {
+    "id": "04",
+    "category": "Fantasy",
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "pages": 650
+  },
+
+  {
+    "id": "05",
+    "category": "Fantasy",
+    "title": "Fantastic Beasts and Where to Find Them",
+    "author": "J. K. Rowling, Ian Nathan",
+    "pages": 128
+  },
+
+  {
+    "id": "06",
+    "category": "Fantasy",
+    "title": "Percy Jackson & the Olympians",
+    "author": "Rick Riordan",
+    "pages": 349
+  },
+
+  {
+    "id": "07",
+    "category": "Fantasy",
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "pages": 852
+  },
+  {
+    "id": "08",
+    "category": "N/A",
+    "title": "Aj Himur Biye",
+    "author": "Humayun Ahmed",
+    "pages": 108
+  },
+  {
+    "id": "09",
+    "category": "N/A",
+    "title": "Himur Hat a koyti Nil Poddo",
+    "author": "Humayun Ahmed",
+    "pages": 103
+  },
+  {
+    "id": "10",
+    "category": "Fantasy",
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "pages": 852
+  },
+
+  {
+    "id": "11",
+    "category": "Science",
+    "title": "Ca Coffiee ar Quantam Mechanics",
+    "author": "Nayem Islam Faruque",
+    "pages": 311
+  },
+
+  {
+    "id": "12",
+    "category": "Si-FI",
+    "title": "Notun Prithibi",
+    "author": "Jafor Iqbal",
+    "pages": 01
+  }
+
+]
