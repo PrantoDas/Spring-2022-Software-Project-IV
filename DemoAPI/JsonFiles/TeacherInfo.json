@@ -1,0 +1,44 @@
+[
+  {
+    "id": "710000168",
+    "name": "Prof. Dr. S.M. Mahbub Ul Haque Majumder",
+    "age": 55,
+    "email": "deanfsit@daffodilvarsity.edu.bd",
+    "depeartment": "CSE"
+  },
+  {
+    "id": "710000367",
+    "name": "Professor Dr. Md. Fokhray Hossain",
+    "age": 45,
+    "email": "drfokhray@daffodilvarsity.edu.bd",
+    "depeartment": "CSE"
+  },
+  {
+    "id": "710001029",
+    "name": "Professor Dr. Touhid Bhuiyan",
+    "age": 41,
+    "email": "headcse@daffodilvarsity.edu.bd",
+    "depeartment": "CSE"
+  },
+  {
+    "id": "2011382828",
+    "name": "Dr. Neil Perez Balba",
+    "age": 22,
+    "email": "balba.cse@diu.edu.bd",
+    "depeartment": "CSE"
+  },
+  {
+    "id": "201352355",
+    "name": "Wais Ahmed",
+    "age": 23,
+    "email": "wais@diu.edu.bd",
+    "depeartment": "CSE"
+  },
+  {
+    "id": "2011345259",
+    "name": "Rafik Mia",
+    "age": 31,
+    "email": "rafik@diu.edu.bd",
+    "depeartment": "CSE"
+  }
+]
