@@ -1,0 +1,74 @@
+[
+  {
+    "id": 111,
+    "courseName": "Computer Fundamentals",
+    "courseTeacher": "Dr. Sheikh rashed haider noori",
+    "credit": 3
+  },
+  {
+    "id": 112,
+    "courseName": "Basic Mathematics",
+    "courseTeacher": "Protima Das",
+    "credit": 3
+  },
+  {
+    "id": 113,
+    "courseName": "Basic English",
+    "courseTeacher": "Shahrena Afrin Siddique",
+    "credit": 3
+  },
+  {
+    "id": 114,
+    "courseName": "History of Bangladesh",
+    "courseTeacher": "Maria Akter",
+    "credit": 3
+  },
+  {
+    "id": 115,
+    "courseName": "Programming and problem solving",
+    "courseTeacher": "Masud Rabbani",
+    "credit": 2
+  },
+  {
+    "id": 116,
+    "courseName": "Problem Solving Lab",
+    "courseTeacher": "Masud Rabbani",
+    "credit": 1
+  },
+  {
+    "id": 123,
+    "courseName": "Writing and Comprehension",
+    "courseTeacher": "Shahrena Afrin Siddique",
+    "credit": 3
+  },
+  {
+    "id": 121,
+    "courseName": "Bangladesh Studies",
+    "courseTeacher": "Mr. Mohammad Faisal Akber",
+    "credit": 3
+  },
+  {
+    "id": 124,
+    "courseName": "Business Application Design",
+    "courseTeacher": "Mr. Md. Rezwanul Islam",
+    "credit": 1
+  },
+  {
+    "id": 135,
+    "courseName": "Data Structure",
+    "courseTeacher": "Mr. Md Azharul Islam Tazib",
+    "credit": 2
+  },
+  {
+    "id": 133,
+    "courseName": "Electrical Circuits Lab",
+    "courseTeacher": "Mr. Shuvo Das",
+    "credit": 2
+  },
+  {
+    "id": 131,
+    "courseName": "Discrete Mathematics",
+    "courseTeacher": "Ms. Asma Mariam",
+    "credit": 3
+  }
+]
