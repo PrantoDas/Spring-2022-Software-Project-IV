@@ -1,0 +1,116 @@
+[
+  {
+    "numberOfSemester": "1",
+    "semesterName": "L1T1",
+    "numberOfNewStudents": 175,
+    "numberOfAllStudents": 850,
+    "numberOfTeachers": 150,
+    "numberOfStaffs": 85,
+    "id": 1
+  },
+  {
+    "numberOfSemester": "2",
+    "semesterName": "L1T2",
+    "numberOfNewStudents": 160,
+    "numberOfAllStudents": 900,
+    "numberOfTeachers": 156,
+    "numberOfStaffs": 82,
+    "id": 2
+  },
+  {
+    "numberOfSemester": "3",
+    "semesterName": "L1T3",
+    "numberOfNewStudents": 200,
+    "numberOfAllStudents": 875,
+    "numberOfTeachers": 162,
+    "numberOfStaffs": 85,
+    "id": 3
+  },
+  {
+    "numberOfSemester": "4",
+    "semesterName": "L2T1",
+    "numberOfNewStudents": 175,
+    "numberOfAllStudents": 915,
+    "numberOfTeachers": 170,
+    "numberOfStaffs": 90,
+    "id": 4
+  },
+  {
+    "numberOfSemester": "5",
+    "semesterName": "L2T2",
+    "numberOfNewStudents": 195,
+    "numberOfAllStudents": 1000,
+    "numberOfTeachers": 170,
+    "numberOfStaffs": 92,
+    "id": 5
+  },
+  {
+    "numberOfSemester": "6",
+    "semesterName": "L2T3",
+    "numberOfNewStudents": 215,
+    "numberOfAllStudents": 985,
+    "numberOfTeachers": 172,
+    "numberOfStaffs": 87,
+    "id": 6
+  },
+  {
+    "numberOfSemester": "7",
+    "semesterName": "L3T1",
+    "numberOfNewStudents": 100,
+    "numberOfAllStudents": 750,
+    "numberOfTeachers": 145,
+    "numberOfStaffs": 75,
+    "id": 7
+  },
+
+  {
+    "numberOfSemester": "8",
+    "semesterName": "L3T2",
+    "numberOfNewStudents": 103,
+    "numberOfAllStudents": 800,
+    "numberOfTeachers": 147,
+    "numberOfStaffs": 75,
+    "id": 8
+  },
+
+  {
+    "numberOfSemester": "9",
+    "semesterName": "L3T3",
+    "numberOfNewStudents": 175,
+    "numberOfAllStudents": 900,
+    "numberOfTeachers": 147,
+    "numberOfStaffs": 75,
+    "id": 9
+  },
+
+  {
+    "numberOfSemester": "10",
+    "semesterName": "L4T1",
+    "numberOfNewStudents": 180,
+    "numberOfAllStudents": 1000,
+    "numberOfTeachers": 150,
+    "numberOfStaffs": 79,
+    "id": 10
+  },
+
+  {
+    "numberOfSemester": "11",
+    "semesterName": "L4T2",
+    "numberOfNewStudents": 200,
+    "numberOfAllStudents": 950,
+    "numberOfTeachers": 170,
+    "numberOfStaffs": 79,
+    "id": 11
+  },
+
+  {
+    "numberOfSemester": "12",
+    "semesterName": "L4T3",
+    "numberOfNewStudents": 250,
+    "numberOfAllStudents": 1000,
+    "numberOfTeachers": 180,
+    "numberOfStaffs": 80,
+    "id": 12
+  }
+
+]

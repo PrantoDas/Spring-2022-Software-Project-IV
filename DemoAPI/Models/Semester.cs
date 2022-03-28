@@ -8,6 +8,6 @@
         public int NumberOfAllStudents { get; set; }
         public int NumberOfTeachers { get; set; }
         public int NumberOfStaffs { get; set; }
-        public int Id { get; internal set; }
+        public int Id { get; set; }
     }
 }

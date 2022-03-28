@@ -2,6 +2,7 @@
 using DemoAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace DemoAPI.Controllers
 {
@@ -15,11 +16,33 @@ namespace DemoAPI.Controllers
         {
             _context = context;
         }
+
+        private async void LoadSemesterData()
+        {
+            StreamReader streamReader = new StreamReader("JsonFiles/SemesterInfo.json");
+            var jsonData = streamReader.ReadToEnd();
+            var semesterList = JsonConvert.DeserializeObject<List<Semester>>(jsonData);
+
+            foreach (var semester in semesterList)
+            {
+                _context.Semesters.Add(semester);
+            }
+
+            await _context.SaveChangesAsync();
+        }
+
         // GET: api/Semesters
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Semester>>> GetSemesters()
         {
-            return await _context.Semesters.ToListAsync();
+            List<Semester> semesterData = await _context.Semesters.ToListAsync();
+            if (semesterData.Count() == 0)
+            {
+                LoadSemesterData();
+                semesterData = await _context.Semesters.ToListAsync();
+            }
+            return semesterData;
+            
         }
 
         // GET: api/Semesters/5
