@@ -135,6 +135,16 @@ namespace DemoAPI.Controllers
             return NoContent();
         }
 
+        // GET: credit find
+        [HttpGet("findByCredit")]
+        public async Task<ActionResult<IEnumerable<Course>>> findByCredit(int credit)
+        {
+            var allCourse = await _context.Courses.ToListAsync();
+            var selectedCourse = allCourse.FindAll(s => s.Credit > credit);
+            return selectedCourse;
+
+        }
+
         private bool CourseExists(int id)
         {
             return _context.Courses.Any(e => e.Id == id);
