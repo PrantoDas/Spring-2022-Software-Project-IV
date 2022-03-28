@@ -1,0 +1,63 @@
+[
+  {
+    "id": 15,
+    "Department_name": "Computer Science & Engineering",
+    "Faculty": "FSIT",
+    "NumberOfStudent": 12000
+  },
+  {
+    "id": 35,
+    "Department_name": "Department of Software Engineering",
+    "Faculty": "FSIT",
+    "NumberOfStudent": 5000
+  },
+  {
+    "id": 45,
+    "Department_name": "Department of Civil Engineering",
+    "Faculty": "FSIT",
+    "NumberOfStudent": 4000
+  },
+  {
+    "id": 55,
+    "Department_name": "Information Technology and Management",
+    "Faculty": "FSIT",
+    "NumberOfStudent": 3000
+  },
+  {
+    "id": 65,
+    "Department_name": "Multimedia & Creative Technology",
+    "Faculty": "FSIT",
+    "NumberOfStudent": 2000
+  },
+  {
+    "id": 85,
+    "Department_name": "Department of Textile Engineering",
+    "Faculty": "Faculty of Engineering",
+    "NumberOfStudent": 2000
+  },
+  {
+    "id": 95,
+    "Department_name": "Department of Architecture",
+    "Faculty": "Faculty of Engineering",
+    "NumberOfStudent": 2000
+  },
+  {
+    "id": 105,
+    "Department_name": "Electrical & Electronic Engineering",
+    "Faculty": "Faculty of Engineering",
+    "NumberOfStudent": 2000
+  },
+  {
+    "id": 115,
+    "Department_name": "Electronics & Telecommunication Engineering",
+    "Faculty": "Faculty of Engineering",
+    "NumberOfStudent": 1000
+  },
+  {
+    "id": 75,
+    "Department_name": "Public Health",
+    "Faculty": "Faculty of Engineering",
+    "NumberOfStudent": 2000
+  }
+
+]
